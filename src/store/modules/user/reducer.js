@@ -9,6 +9,12 @@ function user(state = INITIAL_STATE, action) {
         profile: action.payload.user,
       };
     }
+    case '@user/UPDATE_PROFILE_SUCCESS': {
+      debugger;
+      return {
+        profile: action.payload.data,
+      };
+    }
     default:
       return state;
   }

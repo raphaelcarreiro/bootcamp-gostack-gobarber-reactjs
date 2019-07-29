@@ -1,3 +1,5 @@
+import { MdDrafts } from 'react-icons/md';
+
 const INITIAL_STATE = {
   token: null,
   signed: false,
@@ -23,6 +25,13 @@ function auth(state = INITIAL_STATE, action) {
       return {
         ...state,
         loading: false,
+      };
+    }
+    case '@auth/SIGN_OUT': {
+      return {
+        ...state,
+        token: null,
+        signed: false,
       };
     }
     default:
