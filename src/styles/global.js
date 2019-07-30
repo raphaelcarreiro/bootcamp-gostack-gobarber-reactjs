@@ -16,8 +16,8 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  html, body, #root {
-    height: 100%;
+  #root {
+    min-height: 100vh;
   }
 
   body {
